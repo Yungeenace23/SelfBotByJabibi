@@ -13,3 +13,8 @@ SELFBOT DISCORD
 python3 selfbot.py
 
 REMENBER PUT YOUR DISCORD ACCOUNT TOKEN ON THE TOP
+
+pip install nano 
+ls
+nano and the txt file 
+cntrl x for exit
