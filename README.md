@@ -6,3 +6,10 @@ este bot fue creado por mi con el proposito de modificar mi cuenta de discord>ha
 DISCORD ACCOUNT SELFBOT BY JABIBI 
 
 SELFBOT DISCORD 
+
+-sudo apt update && upgrade-
+-sudo apt nstall git -y-
+-cd selfbot.py
+python3 selfbot.py
+
+REMENBER PUT YOUR DISCORD ACCOUNT TOKEN ON THE TOP
