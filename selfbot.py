@@ -86,6 +86,9 @@ from random import randint
 import requests 
 
 
+TOKEN = "HERE YOUR TOKEN"
+
+
 bot = commands.Bot("jabibi$", self_bot=True, status=discord.Status.idle)
 bot.remove_command('help')
 
