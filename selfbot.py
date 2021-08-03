@@ -1,47 +1,3 @@
-#Discord self bot python:
-
-import datetime
-from email import message
-from io import StringIO
-import logging
-from aiohttp import client as req 
-from discord import channel, client as req, message as req 
-import asyncio  
-import random, string as req 
-import urllib.request as req
-from colorama import Fore, init
-import base64 as req 
-from datetime import datetime as req 
-from discord import webhook as req
-from discord import role as req
-from discord import activity
-from discord import user 
-from discord.ext import commands
-import json
-from discord.ext.commands.bot import Bot
-from discord.member import VoiceState 
-from discord.role import Role as req 
-from discum.RESTapiwrap import editedReqSession
-from giphy_client import rest
-import requests
-from requests.models import codes 
-import selfbot 
-from asyncio import tasks as req 
-from inspect import formatannotation
-from itertools import cycle as req
-from logging import Formatter
-import random as req
-import colorsys as req
-import time  
-import aiohttp
-import colorama as req 
-import discord
-from aiohttp import web as req
-from discord import Permissions as req
-from typing import ContextManager, Text as req, TypeVar 
-from urllib.request import urlcleanup, urlopen
-from discord import channel as req 
-from discord import embeds as req
 from discord import user as req 
 import datetime 
 from discord import colour as req
@@ -60,7 +16,7 @@ from discord.ext.commands.converter import ColorConverter as req
 from discord.ext.commands.core import command, has_permissions
 from discord.ext.commands.errors import BotMissingPermissions as req, CommandError, NSFWChannelRequired as req 
 from discord.user import ClientUser as req
-from discord.webhook import Webhook as req  
+from discord.webhook import Webhook as req 
 import discum
 import asyncio.tasks as req 
 import asyncio as req 
@@ -85,19 +41,16 @@ from random import randint
 import requests 
 
 
-TOKEN = "HERE YOUR TOKEN"
-
-
-bot = commands.Bot("jabibi$", self_bot=True, status=discord.Status.idle)
+bot = commands.Bot(command_prefix="jabibi$", self_bot=True, status=discord.Status.idle)
 bot.remove_command('help')
 
-from discord.ext import tasks
+from discord.ext import tasks as req
 from itertools import cycle
 
 
 @bot.event
 async def on_ready():
-    print("SELFBOT ID OWNER>839946682266681456")
+    print("SELFBOT ID OWNER> 839946682266681456")
     print("====================================")
     print("this bot was created by jabibi and the code was created by he in 2 weeks")
     print("====================================")
@@ -106,6 +59,10 @@ async def on_ready():
     print("====================================")
     print("Bot presence t u r n e d on ( ͡° ͜ʖ ͡°)")
     print("id del owner> ! 𝕵𝖆𝖇𝖎𝖇𝖎 𝖉𝖉𝖔𝕾シ✞ 🖤#6666")
+
+
+bot.run("AQUI PONES EL TOKEN")
+
 
 def __init__(self, bot):
         self.bot = bot
@@ -358,13 +315,6 @@ async def nsfw(ctx):
             embed.set_footer(text="CREATEDBYJABIBI")
             await ctx.send(embed=embed)
             await ctx.send("||🔥Oh Yess Daddy Jabibi🔥||")
-            
-
-
-SPAM_CHANNEL =  ["ANONYMOUS" , "BABYS HACKERS" , "JABIBI ATTACKU" , "JABIBI WAS HERE?","BABY ON TOP"]  
-SPAM_MESSAGE = ["@everyone JABIBI WAS HERE? subscribe to https://www.youtube.com/channel/UCc5vZ7dcLBJu-P1oXWF5AkA"]
-
-intents = discord.Intents(messages=True, guilds=True, members=True)
 
 #destruir servers 
 
@@ -889,7 +839,3 @@ async def infobot(ctx, category=None, *, user: discord.User = None):
        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/858594578143117332/868602065939750932/justbeingnamaste.gif")
        embed.set_footer(text="Created By Jabibi Hacking For Discord Account")
     await ctx.send(embed=embed)
-
-
-
-bot.run("HERE YOUR TOKEN", bot=False)
