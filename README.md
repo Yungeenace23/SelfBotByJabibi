@@ -7,9 +7,12 @@ DISCORD ACCOUNT SELFBOT BY JABIBI
 
 SELFBOT DISCORD 
 
--sudo apt update && upgrade-
--sudo apt nstall git -y-
--cd selfbot.py
+sudo apt update && upgrade-
+
+sudo apt install git y-
+
+cd selfbot.py
+
 python3 selfbot.py
 
 REMENBER PUT YOUR DISCORD ACCOUNT TOKEN ON THE TOP
