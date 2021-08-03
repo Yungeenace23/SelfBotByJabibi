@@ -13,7 +13,15 @@ sudo apt install git y-
 
 cd selfbot.py
 
+nano selfbot.py
+
+put your discord token
+ 
+and press ctrl + x
+ 
 python3 selfbot.py
+
+
 
 REMENBER PUT YOUR DISCORD ACCOUNT TOKEN ON THE TOP
 
