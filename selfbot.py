@@ -60,10 +60,7 @@ async def on_ready():
     print("Bot presence t u r n e d on ( ͡° ͜ʖ ͡°)")
     print("id del owner> ! 𝕵𝖆𝖇𝖎𝖇𝖎 𝖉𝖉𝖔𝕾シ✞ 🖤#6666")
 
-
-bot.run("AQUI PONES EL TOKEN")
-
-
+    
 def __init__(self, bot):
         self.bot = bot
 
@@ -839,3 +836,5 @@ async def infobot(ctx, category=None, *, user: discord.User = None):
        embed.set_thumbnail(url="https://cdn.discordapp.com/attachments/858594578143117332/868602065939750932/justbeingnamaste.gif")
        embed.set_footer(text="Created By Jabibi Hacking For Discord Account")
     await ctx.send(embed=embed)
+    
+    bot.run("AQUI PONES EL TOKEN")
