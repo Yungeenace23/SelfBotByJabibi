@@ -837,4 +837,5 @@ async def infobot(ctx, category=None, *, user: discord.User = None):
        embed.set_footer(text="Created By Jabibi Hacking For Discord Account")
     await ctx.send(embed=embed)
     
-    bot.run("AQUI PONES EL TOKEN")
+    
+ bot.run("AQUI PONES EL TOKEN")
