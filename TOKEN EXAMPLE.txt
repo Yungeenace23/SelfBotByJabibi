@@ -4,7 +4,6 @@ the selfbot file ok? ok
 TOKEN = "HERE"
 
 and in the bottom down 
-bot.run("HERE YOUR TOKEN", bot=False)
 
 put your token down to!!
 
