@@ -1,8 +1,6 @@
 Put your token on the main file
 the selfbot file ok? ok
 
-TOKEN = "HERE"
-
 and in the bottom down 
 
 put your token down to!!
