@@ -11,6 +11,8 @@ sudo apt update && upgrade-
 
 sudo apt install git y-
 
+sudo apt install nano
+
 cd selfbot.py
 
 nano selfbot.py
