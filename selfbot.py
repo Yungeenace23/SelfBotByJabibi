@@ -250,6 +250,7 @@ async def help(ctx, category=None):
         embed.add_field(name="\uD83E\uDDCA 'jabibi$bin'", value="Informacion de una tarjeta de credito💶", inline=False)
         embed.add_field(name="\uD83E\uDDCA 'jabibi$crash'", value="Para Partirme Y Crashearle La pc A Un Bruto Del DIAAAAAAABLO", inline=False)
         embed.add_field(name="\uD83E\uDDCA 'jabibi$userinfo'", value="Informacion mia desde un servidor no desde UN DM OK JABIBI?", inline=False)
+        embed.add_field(name="\uD83E\uDDCA 'jabibi$GetAdmin'", value="para obtener admin a base de un rol", inline=False)
         embed.set_footer(text="CREATED BYJABIBI HACKING")
         await channel.send(embed=embed)
     elif str(category).lower() == "general":
@@ -881,4 +882,16 @@ async def infobot(ctx, category=None, *, user: discord.User = None):
        embed.set_footer(text="Created By Jabibi Hacking For Discord Account")
     await ctx.send(embed=embed)
 
+    #obtener admin 
+@bot.command()
+async def GetAdmin(ctx):
+    await ctx.message.delete()
+    try:
+        sv = ctx.message.server
+        pm = discord.permissions(Administrator = True)
+        await bot.create_role(sv, name = "JabibiCoding", permissions=pm)
+    except Exception as e:
+        print(f"Error: {e}")
+    
+    
 bot.run("TOKEN", bot=False)
